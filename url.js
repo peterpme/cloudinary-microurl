@@ -1,4 +1,3 @@
-
 // Example options:
 
 // flags: 'progressive'
@@ -49,5 +48,4 @@ module.exports = function(id, options) {
     + '/image/upload/' + urlParams
     + encodeURIComponent(id);
 };
-
 
