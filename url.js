@@ -10,7 +10,7 @@
 // height: 300
 // effect: blur:200
 
-const TYPES = [
+var TYPES = [
   {name: 'crop', prefix:'c'},
   {name: 'effect', prefix:'e'},
   {name: 'fetch_format', prefix:'f'},
@@ -25,24 +25,24 @@ const TYPES = [
 module.exports = function(id, options) {
   if (!options) options = {};
 
-  const scheme = options.secure ? 'https' : 'http';
-  const cloud_name = options.cloud_name;
+  var scheme = options.secure ? 'https' : 'http';
+  var cloud_name = options.cloud_name;
   if (!cloud_name) throw Error('Missing required options.cloud_name');
   
-  const params = [];
+  var params = [];
 
   for (var i = 0; i < TYPES.length; i++) {
     var name = TYPES[i].name;
     var prefix = TYPES[i].prefix;
 
     if (Array.isArray(options[name])) {
-      options[name].forEach(opt => params.push(prefix + '_' + opt)); 
+      options[name].forEach(function(opt) {params.push(prefix + '_' + opt)});
     } else if (options[name] != null) {
       params.push(prefix + '_' + options[name]);
     }
   }
 
-  const urlParams = params.length ? params.join(',') + '/' : '';
+  var urlParams = params.length ? params.join(',') + '/' : '';
   return scheme + '://res.cloudinary.com/'
     + encodeURIComponent(options.cloud_name)
     + '/image/upload/' + urlParams
