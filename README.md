@@ -32,10 +32,11 @@ img.src = url;
 ```
 
 
-### Missing features
+### Feature support
 
 This library only supports the following cloudinary features:
 
+- Secure
 - Crop
 - Effect
 - Fetch format
