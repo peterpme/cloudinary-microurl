@@ -1,6 +1,6 @@
 {
   "name": "cloudinary-microurl",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "A tiny library to generate cloudinary URLs from options objects",
   "main": "url.js",
   "scripts": {
