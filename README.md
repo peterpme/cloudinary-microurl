@@ -51,6 +51,11 @@ so I just added the features I use. If you need more features, please submit a
 PR.
 
 
+### Fetch mode
+
+Set {source: 'fetch'} to activate cloundinary [fetch mode](http://cloudinary.com/documentation/fetch_remote_images#remote_image_fetch_url). You need to enable it in the [security options](https://cloudinary.com/console/settings/security). The image name should be a full URL.
+
+
 ### Maintainance
 
 This is a library bourne of necessity, not love. I don't want to maintain this
