@@ -26,6 +26,7 @@ module.exports = function(id, options) {
   if (!options) options = {};
 
   var scheme = options.secure ? 'https' : 'http';
+  var source = options.source || 'upload';
   var cloud_name = options.cloud_name;
   if (!cloud_name) throw Error('Missing required options.cloud_name');
   
@@ -45,7 +46,7 @@ module.exports = function(id, options) {
   var urlParams = params.length ? params.join(',') + '/' : '';
   return scheme + '://res.cloudinary.com/'
     + encodeURIComponent(options.cloud_name)
-    + '/image/upload/' + urlParams
+    + '/image/' + source + '/' + urlParams
     + encodeURIComponent(id);
 };
 
