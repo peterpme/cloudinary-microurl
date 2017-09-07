@@ -20,6 +20,7 @@ var TYPES = [
   {name: 'radius', prefix:'r'},
   {name: 'quality', prefix:'q'},
   {name: 'width', prefix:'w'},
+  {name: 'dpr', prefix:'dpr'},
 ];
 
 module.exports = function(id, options) {
