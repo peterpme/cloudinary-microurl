@@ -1,4 +1,8 @@
-# Cloudinary Micro URL
+<p align="center">
+  <img src="https://i.imgur.com/0HShUQD.png" width="500" alt="Cloudinary MicroURL">
+</p>
+
+# 🗜 Cloudinary Micro URL
 
 A tiny (349B), 0 dependency, fully-tested library to generate Cloudinary URLs from an options object.
 
