@@ -2,13 +2,12 @@
   <img src="https://i.imgur.com/0HShUQD.png" width="700" alt="Cloudinary MicroURL">
 </p>
 
-# 🗜 Cloudinary Micro URL
+# 🗜 Cloudinary Micro URL[![npm](https://img.shields.io/npm/v/cloudinary-microurl.svg)](https://npm.im/cloudinary-microurl) [![travis](https://travis-ci.org/peterpme/cloudinary-microurl.svg?branch=master)](https://travis-ci.org/peterpme/cloudinary-microurl)
 
 A tiny (349B), 0 dependency, fully-tested library to generate Cloudinary URLs from an options object.
+The official Cloudinary js library is ~600kb. This saves you *1700%*. If this were a crypto coin, you wouldn't be here, would you?
 
-The official Cloudinary js library is ~600kb. This saves you 1700%. If this were a crypto coin, you wouldn't be here.
-
-## Installation
+### Installation
 
 ```sh
 yarn add cloudinary-microurl
@@ -18,7 +17,7 @@ yarn add cloudinary-microurl
 npm install cloudinary-microurl
 ```
 
-## Usage
+### Usage
 
 ```es6
 const cloudinaryUrl = require('cloudinary-microurl')
@@ -36,7 +35,7 @@ img.src = url
 
 ### Supported Features
 
-This library only supports the following Cloudinary features:
+This library supports the following Cloudinary features:
 
 - Fetch format
 - Crop
@@ -48,6 +47,21 @@ This library only supports the following Cloudinary features:
 - Quality
 - Width
 - Dpr
+
+Here's what they look like in code:
+
+```es6
+fetch_format: "f",
+crop: "c",
+effect: "e",
+flags: "fl",
+gravity: "g",
+height: "h",
+radius: "r",
+quality: "q",
+width: "w",
+dpr: "dpr"
+```
 
 ### Fetch mode
 
