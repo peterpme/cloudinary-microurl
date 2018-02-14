@@ -5,7 +5,7 @@
   "main": "dist/cloudinaryUrl.js",
   "source": "cloudinaryUrl.js",
   "module": "dist/cloudinaryUrl.m.js",
-  "repository": "peterpme/cloudinaryUrl.git",
+  "repository": "peterpme/cloudinary-microurl.git",
   "homepage": "git@github.com:peterpme/cloudinary-microurl.git",
   "keywords": [
     "cloudinary",
