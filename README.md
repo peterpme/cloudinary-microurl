@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://i.imgur.com/0HShUQD.png" width="500" alt="Cloudinary MicroURL">
+  <img src="https://i.imgur.com/0HShUQD.png" width="700" alt="Cloudinary MicroURL">
 </p>
 
 # 🗜 Cloudinary Micro URL
