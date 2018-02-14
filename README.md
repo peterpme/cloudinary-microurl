@@ -66,7 +66,7 @@ dpr: "dpr"
 
 ### Fetch mode
 
-Set {source: 'fetch'} to activate cloundinary [fetch mode](http://cloudinary.com/documentation/fetch_remote_images#remote_image_fetch_url). You need to enable it in the [security options](https://cloudinary.com/console/settings/security). The image name should be a full URL.
+Set `{source: 'fetch'}` to activate cloundinary [fetch mode](http://cloudinary.com/documentation/fetch_remote_images#remote_image_fetch_url). You need to enable it in the [security options](https://cloudinary.com/console/settings/security). The image name should be a full URL.
 
 ### Contributions
 
