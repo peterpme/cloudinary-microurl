@@ -1,2 +1,11 @@
 .*.swp
-node_modules
+/package-lock.json
+.DS_Store
+/coverage
+/dist
+/lib
+/es
+/node_modules
+/umd
+/es
+npm-debug.log
