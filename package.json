@@ -7,6 +7,10 @@
   "module": "dist/cloudinaryUrl.m.js",
   "repository": "peterpme/cloudinaryUrl.git",
   "homepage": "git@github.com:peterpme/cloudinary-microurl.git",
+  "keywords": [
+    "cloudinary",
+    "cloudinary-url"
+  ],
   "scripts": {
     "prepare": "microbundle",
     "test": "jest",
