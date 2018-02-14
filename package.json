@@ -16,7 +16,10 @@
     "cloudinaryUrl.js",
     "dist"
   ],
-  "author": "Joseph Gentle <me@josephg.com>",
+  "authors": [
+    "Joseph Gentle <me@josephg.com>",
+    "Peter Piekarczyk <peter@peterp.me"
+  ],
   "license": "MIT",
   "devDependencies": {
     "cloudinary-core": "2.0.8",
