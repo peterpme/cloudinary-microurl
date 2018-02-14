@@ -4,7 +4,7 @@
 
 # 🗜 Cloudinary Micro URL[![npm](https://img.shields.io/npm/v/cloudinary-microurl.svg)](https://npm.im/cloudinary-microurl) [![travis](https://travis-ci.org/peterpme/cloudinary-microurl.svg?branch=master)](https://travis-ci.org/peterpme/cloudinary-microurl)
 
-A tiny (349B), 0 dependency, fully-tested library to generate Cloudinary URLs from an options object.
+A tiny (346B), 0 dependency, fully-tested library to generate Cloudinary URLs from an options object.
 
 The official Cloudinary js library is ~600kb. This saves you **1700%**. If this were a crypto coin, you wouldn't be here, would you?
 
