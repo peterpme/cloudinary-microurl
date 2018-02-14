@@ -35,7 +35,7 @@ module.exports = (id, options = {}) => {
     "image",
     source,
     urlParams,
-    encodeURIComponent(id)
+    id
   ]
     .filter(Boolean)
     .join("/");
