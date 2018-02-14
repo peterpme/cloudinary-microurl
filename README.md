@@ -1,63 +1,57 @@
-# Cloudinary URL
+# Cloudinary Micro URL
 
-This is a simple library to generate cloudinary URLs from an options object.
+A tiny (349B), 0 dependency, fully-tested library to generate Cloudinary URLs from an options object.
 
-Cloudinary's official JS library is ~600k (including all of lodash). Its much
-too big for use in the browser. This one minifies to under 1k.
+The official Cloudinary js library is ~600kb. This saves you 1700%. If this were a crypto coin, you wouldn't be here.
 
+## Installation
 
-## Usage
-
+```sh
+yarn add cloudinary-microurl
 ```
+
+```sh
 npm install cloudinary-microurl
 ```
 
-Then:
+## Usage
 
-```javascript
-const cloudurl = require('cloudinary-microurl');
-
-// 'https://res.cloudinary.com/demo/image/upload/fl_progressive,g_face,q_80/my_cool_image'
-const url = cloudurl('my_cool_image', {
+```es6
+const cloudinaryUrl = require('cloudinary-microurl')
+const url = cloudinaryUrl('twitter.jpg', {
   secure: true,
   cloud_name: 'demo',
   gravity: 'face',
   flags: 'progressive',
   quality: 80
-});
+})
 
-// Then use it.
-const img = new Image;
-img.src = url;
+const img = new Image();
+img.src = url
 ```
 
+### Supported Features
 
-### Feature support
+This library only supports the following Cloudinary features:
 
-This library only supports the following cloudinary features:
-
-- Secure
+- Fetch format
 - Crop
 - Effect
-- Fetch format
 - Flags
 - Gravity
-- Width / height
+- Height
 - Radius
 - Quality
-
-Adding more cloudinary features is super easy, but I can't find a master list
-so I just added the features I use. If you need more features, please submit a
-PR.
-
+- Width
+- Dpr
 
 ### Fetch mode
 
 Set {source: 'fetch'} to activate cloundinary [fetch mode](http://cloudinary.com/documentation/fetch_remote_images#remote_image_fetch_url). You need to enable it in the [security options](https://cloudinary.com/console/settings/security). The image name should be a full URL.
 
+### Contributions
 
-### Maintainance
+If there's an effect thats missing, create an Issue or an PR. It's SUPER EASY!
 
-This is a library bourne of necessity, not love. I don't want to maintain this
-library going forward. If you want to maintain it, [send me an
-email](mailto:me@josephg.com).
+### Thanks to the original author
+This library was originally created by [josephg](https://github.com/josephg)
