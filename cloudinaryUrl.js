@@ -29,12 +29,15 @@ module.exports = (id, options = {}) => {
     .filter(Boolean)
     .join(",");
 
+  const version = options.version && `v${options.version}`;
+
   const url = [
     `${scheme}://res.cloudinary.com`,
     encodeURIComponent(options.cloud_name),
     "image",
     source,
     urlParams,
+    version,
     id
   ]
     .filter(Boolean)

@@ -56,6 +56,18 @@ it("should render correctly with crop and width", () => {
   expect(result).toBe(url);
 });
 
+it("should render correctly version number", () => {
+  const options = {
+    cloud_name: CLOUD_NAME,
+    version: 12345
+  };
+
+  const result = cloudinaryUrl("dog", options);
+  const url = cl.url("dog", options);
+
+  expect(result).toBe(url);
+});
+
 it("should render a bunch of different transformations", () => {
   const options = {
     crop: "fit",
